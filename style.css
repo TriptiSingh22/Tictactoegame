@@ -1,0 +1,91 @@
+ body
+{
+    margin: 0px;
+    background-color: rgb(89, 42, 175);
+}
+.input
+{
+    position: fixed;
+    left: 590px;
+    top: 250px;
+    background-color: rgb(55, 119, 198);
+}
+.button
+{
+   height: 100px;  
+   width: 100px;
+}
+.top_box
+{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(195, 104, 145);
+}
+.top-heading
+{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side_box1
+{
+   position: absolute;
+   left: 0px;
+   top: 150px;
+   width: 20%;
+   height: 590px;
+   background-color: rgb(122, 6, 64);
+}
+.player_1
+{
+    text-align: center;
+    font-size: 40px;
+}
+.player1_score
+{
+    height: 50px;
+    width: 150px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(203, 25, 132);
+    margin-left: 70px;
+}
+.side_box2
+{
+    position: absolute;
+    right: 0px;
+   top: 150px;
+   width: 20%;
+   height: 590px;
+   background-color: rgb(122,6,64);
+}
+.player_2
+{
+    text-align: center;
+    font-size: 40px;
+}
+.player2_score
+{
+    height: 50px;
+    width: 150px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(203, 25, 132);
+    margin-left: 70px;
+}
+.bottom_box
+{
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 50px;
+   background-color:rgb(195, 104, 145);
+   
+}
+
+    

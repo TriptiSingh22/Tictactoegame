@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 24th(TIK-TAK-TOE)</title>
+    <script>
+        var t=1,c1=0,c2=0;
+        function reset()
+        {
+            document.getElementById("a").innerHTML=c1;
+            document.getElementById("b").innerHTML=c2;
+            {
+                if(c1==3)
+                {
+                    alert("final winner is player 1");
+                }
+                else if(c2==3)
+                {
+                    alert("final winner is player 2");
+                }
+            }
+           document.getElementById("b1").value="";
+           document.getElementById("b2").value="";
+           document.getElementById("b3").value="";
+           document.getElementById("b4").value="";
+           document.getElementById("b5").value="";
+           document.getElementById("b6").value="";
+           document.getElementById("b7").value="";
+           document.getElementById("b8").value="";
+           document.getElementById("b9").value="";
+           t=1;
+        }
+        function check()
+        {
+            var a=document.getElementById("b1").value;
+            var b=document.getElementById("b2").value;
+            var c=document.getElementById("b3").value;
+            var d=document.getElementById("b4").value;
+            var e=document.getElementById("b5").value;
+            var f=document.getElementById("b6").value;
+            var g=document.getElementById("b7").value;
+            var h=document.getElementById("b8").value;
+            var i=document.getElementById("b9").value;
+            
+            if(a.length!==0&&b.length!=0&&c.length!==0)
+            {
+                if(a==b&&a==c)
+                {
+                    if(a=="*")
+                    {
+                        alert("player1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("player2 wiiner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+       
+
+            if(d.length!=0&&e.length!==0&&f.length!=0)
+            {
+                if(d==e&&d==f)
+                {
+                    if(d=="*")
+                    {
+                        alert("player1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("player2 winner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+        
+            
+            if(g.length!=0&&h.length!=0&&i.length!=0)
+            {
+                if(g==h&&g==i)
+                {
+                    if(g=="*")
+                    {
+                        alert("palyer1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("player2 winner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+       
+
+            if(a.length!=0&&d.length!=0&&g.length!=0)
+            {
+                if(a==d&&a==g)
+                {
+                    if(a=="*")
+                    {
+                        alert("palyer1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("palyer2 winer");
+                        c1=c1+1;
+                    }
+                    reset();
+                }
+            }
+            if(b.length!=0&&e.length!=0&&h.length!=0)
+            {
+                if(b==e&&b==h)
+                {
+                    if(b=="*")
+                    {
+                        alert("palyer1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("player2 winner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+
+       
+
+            if(c.length!=0&&f.length!=0&&i.length!=0)
+            {
+                if(c==f&&c==i)
+                {
+                    if(c=="*")
+                    {
+                        alert("palyer1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("palyer2 winner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+            if(a.length!=0&&e.length!=0&&i.length!=0)
+            {
+                if(a==e&&a==i)
+                {
+                    if(a=="*")
+                    {
+                        alert("palyer1 winner");
+                        c1=c1+1;
+                    }
+                    else
+                    {
+                        alert("palyer2 winner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+            if(c.length!=0&&e.length!=0&&g.length!=0)
+            {
+                if(c==e&&c==g)
+                {
+                    if(c=="*")
+                    {
+                        alert("palyer1 winner");
+                        c2=c2+1;
+                    }
+                    else
+                    {
+                        alert("palyer2 winner");
+                        c2=c2+1;
+                    }
+                    reset();
+                }
+            }
+            if(t==10)
+            {
+                alert("draw");
+                reset();
+            }
+        } 
+       
+        function tik_tak1()
+        {
+           if(document.getElementById("b1").value.length==0)
+           {
+            if(t%2==1)
+            {
+                document.getElementById("b1").value="X";
+            }
+            else
+            {
+                document.getElementById("b1").value="0";
+            }
+            t++;
+           
+          } 
+          check();
+        }
+        function tik_tak2()
+        {
+            if(document.getElementById("b2").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b2").value="X";
+            }
+            else
+            {
+                document.getElementById("b2").value="0";
+            }
+            t++;
+           
+        }
+        check();
+        }
+        function tik_tak3()
+        {
+            if(document.getElementById("b3").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b3").value="X";
+            }
+            else
+            {
+                document.getElementById("b3").value="0";
+            }
+            t++;
+        }
+        check();
+        
+        }
+        function tik_tak4()
+        {
+            if(document.getElementById("b4").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b4").value="X";
+            }
+            else
+            {
+                document.getElementById("b4").value="0";
+            }
+            t++;
+        }
+        check();
+       
+        }
+        function tik_tak5()
+        {
+            if(document.getElementById("b5").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b5").value="X";
+            }
+            else
+            {
+                document.getElementById("b5").value="0";
+            }
+            t++;
+          }
+          check();
+        }
+        function tik_tak6()
+        {
+            if(document.getElementById("b6").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b6").value="X";
+            }
+            else
+            {
+                document.getElementById("b6").value="0";
+            }
+            t++;
+           }
+           check();
+        }
+        function tik_tak7()
+        {
+            if(document.getElementById("b7").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b7").value="X";
+            }
+            else
+            {
+                document.getElementById("b7").value="0";
+            }
+            t++;
+            check();
+        }
+        
+        }
+        function tik_tak8()
+        {
+            if(document.getElementById("b8").value.length==0)
+          {
+            if(t%2==1)
+            {
+                document.getElementById("b8").value="X";
+            }
+            else
+            {
+                document.getElementById("b8").value="0";
+            }
+            t++;
+          }
+          check();
+        }
+        function tik_tak9()
+        {
+            if(document.getElementById("b9").value.length==0)
+            {
+            if(t%2==1)
+            {
+                document.getElementById("b9").value="X";
+            }
+            else
+            {
+                document.getElementById("b9").value="0";
+            }
+            t++;
+           }
+          check();  
+        }
+    </script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top_box"><p class="top-heading">Tik-Tak-Toe</p></div>
+    <div class="side_box1"><p class="player_1">PLAYER 1</p>
+        <div class="player1_score">
+            <p id="a">0</p>
+        </div>
+    </div>
+  
+    <div class="input">
+    <input type="button" value="" id="b1" onclick="tik_tak1()" class="button">
+    <input type="button" value="" id="b2" onclick="tik_tak2()"  class="button">
+    <input type="button" value="" id="b3" onclick="tik_tak3()"  class="button">
+    <br>
+    <input type="button" value="" id="b4" onclick="tik_tak4()" class="button">
+    <input type="button" value="" id="b5" onclick="tik_tak5()" class="button">
+    <input type="button" value="" id="b6" onclick="tik_tak6()" class="button">
+    <br>
+    <input type="button" value="" id="b7" onclick="tik_tak7()" class="button">
+    <input type="button" value="" id="b8" onclick="tik_tak8()" class="button">
+    <input type="button" value="" id="b9" onclick="tik_tak9()" class="button">
+   </div>
+   <div class="side_box2"><p class="player_2">PLAYER 2</p>
+    <div class="player2_score">
+        <p id="b">0</p>
+    </div>
+</div> 
+<div class="bottom_box"></div>
+    
+</body>
+</html>
+
